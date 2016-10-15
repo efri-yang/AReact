@@ -1,0 +1,13 @@
+.idea
+node_modules/
+.git
+build/
+
+.tmp/
+.dist/
+gulp/
+gulpfile.js
+*.dat
+*.sass-cache
+demo/
+package.json
