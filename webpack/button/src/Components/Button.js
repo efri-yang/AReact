@@ -13,6 +13,7 @@ export default class Button{
     }
     render(node) {
     	const text = $(node).text();
+        const link="http://www.baidu.com";
     	$(node).html(Mustache.render(template, {
             text
         }));
