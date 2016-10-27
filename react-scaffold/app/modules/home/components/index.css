@@ -1,0 +1,7 @@
+@import '../../../theme/styles/utils/variables.css';
+
+.container {
+  width: $main-width;
+  height: $main-height;
+  margin: 0 auto;
+}

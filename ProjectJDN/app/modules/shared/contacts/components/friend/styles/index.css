@@ -1,0 +1,142 @@
+.friend-area {
+	font-size: 12px;
+}
+
+.friend-area > div {
+	width: 100%;
+    float: left;
+
+    &:first-child {
+		padding-top: 17px;
+    }
+
+    &:last-child {
+		margin-bottom: 17px;
+	}
+}
+
+.group-title {
+	padding: 7px 0px 7px 20px;
+	cursor: default;
+	white-space: nowrap;
+	color: #686868;
+}
+
+.group:first-child .group-title {
+	cursor: pointer;
+}
+
+.group-title-switch {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	margin-right: 3px;
+
+	&::before {
+	    content: ' ';
+	    position: absolute;
+	    border-width: 6px 5px 0;
+	    border-style: solid;
+	    border-color: #979ba5 transparent transparent;
+	    top: 5px;
+	    left: 0px;
+	    transform: rotate(-90deg);
+	}
+
+}
+
+.group:global(.open) .group-title-switch::before {
+	transform: rotate(-45deg);
+}
+
+.group:global(.open) .friend-items {
+	display: table;
+	width: 100%;
+}
+
+.friend-items {
+	display: none;
+
+	> li {
+		position: relative;
+    	display: inline-block;
+		padding: 12px 70px 12px 35px;
+		cursor: pointer;
+		line-height: 40px;
+		color: #282828;
+		width: 100%;
+
+		.img-box {
+			width: 40px;
+			height: 40px;
+			margin-right: 10px;
+			float: left;
+		}
+
+		img {
+			border-radius: 2px;
+		}
+
+		span:global(.fname) {
+			display: inline-block;
+			width: calc(100% - 76px);
+			white-space: nowrap;
+		}
+	}
+	li:global(.active) {
+		background: #dbf0ff;
+	}
+	li:global(.checked) {
+		background: #e2e3e9;
+	}
+	li:hover {
+		background: #e6f5ff;
+	}
+}
+
+.friend-area:global(.checked) .friend-items > li {
+	cursor: default;
+	padding: 12px 100px 12px 35px;
+}
+
+
+.checkbox {
+	position: relative;
+	float: left;
+	margin-right: 10px; 
+	margin-top: 12px;
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background: #fff;
+	border: 1px solid #dddddd;
+	border-radius: 2px;
+	cursor: pointer;
+
+	&:hover {
+		background: #ededed;
+	}
+}
+
+li:global(.checked) .checkbox {
+	border: 1px solid #38adff;
+
+	&:hover {
+		background: #fff;
+	}
+
+	&:after {
+		content: ' ';
+	    position: absolute;
+	    display: inline-block;
+	    width: 10px;
+	    height: 6px;
+	    border-width: 0 0px 1px 1px;
+	    border-style: solid;
+	    border-color: #38adff;
+	    top: 2px;
+	    left: 2px;
+	    transform: rotate(-45deg);
+	}
+}

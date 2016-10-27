@@ -1,0 +1,113 @@
+.nd-modal .nd-modal-body {
+	/*max-height: 307px;*/
+}
+
+.nd-modal .nd-modal-btn {
+	width: 110px;
+	height: 32px;
+	line-height: 30px;
+	border-radius: 3px;
+	font-size: 12px;
+	background: #38adff;
+	color: #ffffff;
+	border: 1px solid #38adff;
+	margin-right: 20px;
+
+	&:last-child {
+		margin-right: 0px;
+	}
+}
+
+.nd-modal .nd-modal-btn.nd-modal-btn-white {
+	background: #f4f5f9;
+	color: #676767;
+	border: 1px solid #e6e6e6;
+}
+
+.confirm {
+	:global(.nd-modal-btn-full) {
+		margin-right: 0;
+		border: 0;
+		border-radius: 0;
+	}
+}
+.confirm .nd-modal-body {
+	color: #676767;
+	padding: 20px;
+	word-wrap: break-word;
+    word-break: break-word;
+	font-size: 12px;
+}
+.confirm .nd-modal-btn {
+	background: #f3f6f8;
+	color: #000000;
+	border-top: 1px solid #e6e6e6;
+
+	&:first-child {
+		border-right: 1px solid #e6e6e6;
+	}
+	
+	&:hover {
+		background: #e8e8e8;
+	}
+}
+
+.nd-modal {
+	:global(.rc-dialog-body) {
+		padding: 0;
+	}
+	:global(.rc-dialog-content) {
+		border-radius: 0;
+	}
+	:global(.rc-dialog-close) {
+		font-size: 32px;
+		font-weight: 400;
+		top: 4px;
+		color: #9e9fa1;
+		opacity: 1;
+
+		&:hover {
+			color: #38adff;
+		}
+	}
+	:global(.rc-dialog-header) {
+		border-bottom: 0;
+		background: #f4f5f9;
+		color: #282828;
+		border-radius: 0;
+
+		:global(.rc-dialog-title) {
+			font-weight: normal;
+		}
+	}
+	:global(.rc-dialog-footer) {
+		padding: 0;
+		border-top: 0;
+		text-align: center;
+		border-radius: 0;
+
+		button {
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.confirm {
+	:global(.rc-dialog-close) {
+		top: 0px; 
+	}
+	:global(.rc-dialog-header) {
+		padding: 9px 20px 9px;
+	}
+	:global(.rc-dialog-footer) {
+		padding: 0;
+
+		button {
+			height: 38px;
+			line-height: 38px;
+			margin-top: 0px;
+			margin-bottom: 0px;
+		}
+	}
+}

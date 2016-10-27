@@ -1,0 +1,11 @@
+.mesNum{
+  padding: 0 5px;
+  height: 12px;
+  background-color:#f43531;
+  color: #fff;
+  text-align: center;
+  line-height: 12px;
+  font-size:12px;
+  font-style: normal;
+  border-radius: 7px;
+}

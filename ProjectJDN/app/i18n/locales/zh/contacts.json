@@ -1,0 +1,21 @@
+{
+	"recent": "最近联系人",
+	"friends": "好友",
+	"group": "群",
+	"organization": "组织",
+	"checked": {
+		"hadChecked": "已选择了 {{n}} 个用户"
+	},
+	"homepage": {
+		"title": "个人主页",
+		"delFriend": "删除好友",
+		"addFriend": "加为好友",
+		"sendMsg": "发消息",
+		"info": "个人资料",
+		"weibo": "Ta的微博",
+		"album": "Ta的相册",
+		"sureDel": "确定删除该好友吗？"
+	},
+	"files": "来往文件",
+	"addMember": "添加成员"
+}

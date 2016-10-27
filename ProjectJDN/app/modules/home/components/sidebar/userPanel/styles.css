@@ -1,0 +1,16 @@
+.container {
+  height: 135px;
+  text-align: center;
+  padding: 37.5px 10px;
+}
+
+.avatar {
+  border-radius: 4px;
+}
+
+.name {
+  composes: f14 from 'theme/styles';
+  composes: textoverflow from 'theme/styles';
+  margin-top: 5px;
+  font-weight: 700;
+}

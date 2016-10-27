@@ -1,0 +1,13 @@
+{
+	"on": "已开启",
+  "off":"已关闭",
+  "group":"群组",
+  "desktopNotice":"桌面通知",
+  "promptTone":"提示音",
+  "sendMsgShortcuts":"发送消息快捷键",
+  "pressToSend":"按{{shortcuts}}发送消息",
+  "logout":"退出登录",
+  "logoutConfrim":"确认退出",
+  "logoutWarn":"是否确定要退出{{app_name}}",
+  "logoutConfrimAgain":"确定 我要退出"
+}

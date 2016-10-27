@@ -1,0 +1,14 @@
+@import '../../../theme/styles/utils/variables.css';
+
+.container {
+  width: $main-width;
+  height: $main-height;
+  overflow: hidden;
+  box-shadow: rgba(0,0,0,0.15) 1px 4px 12px;
+  margin: 0 auto;
+}
+
+.body {
+  position: relative;
+  height: 560px;
+}

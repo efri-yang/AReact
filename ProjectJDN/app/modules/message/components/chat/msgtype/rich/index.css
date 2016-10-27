@@ -1,0 +1,15 @@
+.rich {
+  padding: 5px 15px;
+  line-height: 22px;
+  border-radius: 4px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.rich >div {
+  overflow: hidden;
+}
+
+.rich img {
+  vertical-align: middle;
+}

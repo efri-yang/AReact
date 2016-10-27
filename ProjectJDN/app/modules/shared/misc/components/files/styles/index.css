@@ -1,0 +1,197 @@
+.laiwangwenjian {
+	color: #8f8f8f;
+	cursor: pointer;
+  	position: relative;
+  	top:1px;
+	font-size: 20px;
+
+	&:hover {
+	    color: #38adff;
+	}
+}
+
+.body {
+	height: calc(100% - 55px);
+}
+
+.group-body {
+	height: calc(100% - 127px);
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.loading {
+	text-align: center;
+	padding: 20px 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.spinner {
+	position: absolute;
+	transform: translate(50%, 50%);
+}
+
+.file-list {
+	/*padding: 0 15px;*/
+
+	li {
+		position: relative;
+		padding: 13px 15px;
+		border-bottom: 1px solid #ebebeb;
+
+		.info {
+			display: inline-block;
+			float: left;
+			width: calc(100% - 168px);
+		    margin-right: 10px;
+		    font-size: 12px;
+		    color: #8f8f8f;
+
+			.name {
+				width: 100%;
+			    white-space: nowrap;
+			    text-overflow: ellipsis;
+			    overflow: hidden;
+			    margin-top: 7px;
+		    	font-size: 14px;
+			    color: #282828;
+			}
+
+			.time {
+				span:first-child {
+					margin-right: 10px;
+				}
+			}
+		}
+
+		.btn {
+			display: inline-block;
+			width: 84px;
+			text-align: right;
+			padding-right: 15px;
+			line-height: 64px;
+
+			a {
+				color: #a2a2a2;
+			}
+
+			a.hanler {
+				margin-right: 10px;
+				cursor: pointer;
+
+				i {
+					font-size: 20px;
+				}
+
+				&:hover {
+					color: #38adff;
+				}
+
+				&:last-child {
+					margin-right: 0px;
+				}
+
+				* {
+					display: inline-block;
+				}
+			}
+		}
+	}
+}
+
+.btn-box {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background: #f4f5f9;
+	padding: 20px 0;
+
+	button 	{
+		width: 110px;
+		height: 32px;
+		line-height: 30px;
+		border-radius: 3px;
+		font-size: 12px;
+		background: #2d9fef;
+		color: #ffffff;
+		border: 0;
+		margin-right: 0;
+
+		&:hover {
+			background: #38adff;
+		}
+	}
+}
+
+/*文件类型图标样式*/
+.sign {
+	display: inline-block;
+	float: left;
+	width: 64px;
+    height: 64px;
+    background: url(theme/images/sprites/fileicons/clouddisk_icon_unknown.png) no-repeat;
+    margin-right: 10px;
+
+    img {
+    	width: 64px;
+    	height: 64px;
+    	object-fit: cover;
+    }
+}
+.7z { background: url(theme/images/sprites/fileicons/clouddisk_icon_7z.png) no-repeat;}
+.ai { background: url(theme/images/sprites/fileicons/clouddisk_icon_ai.png) no-repeat;}
+.apk { background: url(theme/images/sprites/fileicons/clouddisk_icon_apk.png) no-repeat;}
+.dmg { background: url(theme/images/sprites/fileicons/clouddisk_icon_dmg.png) no-repeat;}
+.dwg { background: url(theme/images/sprites/fileicons/clouddisk_icon_dwg.png) no-repeat;}
+.exe { background: url(theme/images/sprites/fileicons/clouddisk_icon_exe.png) no-repeat;}
+.folder { background: url(theme/images/sprites/fileicons/clouddisk_icon_folder.png) no-repeat;}
+.html { background: url(theme/images/sprites/fileicons/clouddisk_icon_html.png) no-repeat;}
+.ipa { background: url(theme/images/sprites/fileicons/clouddisk_icon_ipa.png) no-repeat;}
+.mmap { background: url(theme/images/sprites/fileicons/clouddisk_icon_mmap.png) no-repeat;}
+.avi,
+.rm,
+.flv,
+.mpg,
+.mov,
+.mkv { background: url(theme/images/sprites/fileicons/clouddisk_icon_mov.png) no-repeat;}
+.mp3 { background: url(theme/images/sprites/fileicons/clouddisk_icon_mp3.png) no-repeat;}
+.mp4 { background: url(theme/images/sprites/fileicons/clouddisk_icon_mp4.png) no-repeat;}
+.pdf { background: url(theme/images/sprites/fileicons/clouddisk_icon_pdf.png) no-repeat;}
+.bmp,
+.jpg,
+.jpeg,
+.png,
+.gif { background: transparent;}
+.ppt,
+.pptx,
+.pptm,
+.ppsx,
+.potx,
+.potm,
+.ppam { background: url(theme/images/sprites/fileicons/clouddisk_icon_ppt.png) no-repeat;}
+.psd { background: url(theme/images/sprites/fileicons/clouddisk_icon_psd.png) no-repeat;}
+.rar { background: url(theme/images/sprites/fileicons/clouddisk_icon_rar.png) no-repeat;}
+.rmvb { background: url(theme/images/sprites/fileicons/clouddisk_icon_rmvb.png) no-repeat;}
+.swf { background: url(theme/images/sprites/fileicons/clouddisk_icon_swf.png) no-repeat;}
+.txt { background: url(theme/images/sprites/fileicons/clouddisk_icon_txt.png) no-repeat;}
+.vsd { background: url(theme/images/sprites/fileicons/clouddisk_icon_vsd.png) no-repeat;}
+.doc,
+.docx,
+.docm,
+.dotx,
+.dotm { background: url(theme/images/sprites/fileicons/clouddisk_icon_word.png) no-repeat;}
+.xls,
+.xlsx,
+.xlsm,
+.xltx,
+.xltm,
+.xlsb,
+.xlam { background: url(theme/images/sprites/fileicons/clouddisk_icon_xls.png) no-repeat;}
+.xmind { background: url(theme/images/sprites/fileicons/clouddisk_icon_xmind.png) no-repeat;}
+.zip { background: url(theme/images/sprites/fileicons/clouddisk_icon_zip.png) no-repeat;}

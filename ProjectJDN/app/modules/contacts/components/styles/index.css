@@ -1,0 +1,17 @@
+.contacts-container {
+	height: 100%;
+}
+
+.left {
+	width: 275px;
+	height: 100%;
+	float: left;
+	border-right: 1px solid #e6f5ff;
+}
+
+.right {
+	width: calc(100% - 275px);
+	height: 100%;
+	float: left;
+	background: #ffffff;
+}

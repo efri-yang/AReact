@@ -1,0 +1,197 @@
+.search {
+  position: relative;
+}
+
+.input-wrap {
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+}
+
+.input {
+  position: relative;
+
+  > input {
+    font-size: 12px;
+    padding: 5px 30px 5px 5px;
+    width: 100%;
+    border: 1px solid #cbe6f9;
+  }
+}
+
+.input-clear {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  text-align: center;
+  background: #9bd6ff;
+  border-radius: 10px;
+  cursor: pointer;
+  line-height:16px;
+
+  &::after {
+    content: '×';
+    font-size: 14px;
+    color: #fff;
+    vertical-align: top;
+  }
+
+  &:hover {
+    background: #38adff;
+  }
+}
+
+.result-wrap {
+  position: relative;
+  width: 100%;
+  float: left;
+}
+
+.result {
+  position: absolute;
+  z-index: 2000;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+@keyframes mySlideUpIn {
+  0% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(.8);
+  }
+  100% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+}
+
+@keyframes mySlideUpOut {
+  0% {
+    opacity: 1;
+    transform-origin: 0% 0%;
+    transform: scaleY(1);
+  }
+  100% {
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: scaleY(.8);
+  }
+}
+
+.slide-out {
+  animation: mySlideUpOut .3s 1;
+}
+
+.slide-in {
+  animation: mySlideUpIn .3s 1;
+}
+
+.hide {
+  display: none;
+}
+
+.overlay {
+  font-size: 12px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.avatar {
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.avatar img {
+  width: 40px;
+  border-radius: 3px;
+}
+
+.user-item-names {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.group-item-names {
+  display: inline-block;
+}
+
+.group-item-names span {
+  height: 40px;
+  line-height: 40px;
+}
+
+.user-item-names .node-name {
+  color: #8f8f8f;
+  margin-top: 5px;
+}
+
+.overlay span {
+  display: block;
+  color: #282828;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.operators span {
+  display: inline-block;
+}
+
+.operators a {
+  float: right;
+  color: #38adff;
+  text-decoration: none;
+  margin-right: 5px;
+}
+
+.not-found {
+  background: #f6faff;
+  color: #282828;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.no-found-input {
+  display: inline-block;
+  max-width: 90px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: top;
+}
+
+ul.item-list {
+  background: #f6f9fe;
+}
+
+.item-list li {
+  padding: 5px 10px;
+}
+
+.item-list li:hover {
+  background: #dbf0ff;
+}
+
+.item-active {
+  background: #dbf0ff;
+}
+
+.item-list li.group-label {
+  cursor: default;
+  background: #e7f5ff;
+}
+
+.item-list li.group-label:hover {
+  background: #e7f5ff;
+}
+
+.keywords {
+  color: #38adff;
+  margin-left: 5px;
+}

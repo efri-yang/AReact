@@ -1,0 +1,22 @@
+{
+  "login": {
+    "form": {
+      "title": "登录",
+      "account": {
+        "placeholder": "工号",
+        "error": "账号格式为：$t(login.form.account.placeholder)"
+      },
+      "password": {
+        "placeholder": "密码",
+        "error": "请输入密码"
+      },
+      "login": "登 录"
+    },
+    "qr": {
+      "open99u": "打开手机99U",
+      "scan": "扫码登录",
+      "error": "二维码获取失败！"
+    },
+    "wait": "请稍候，正在登录..."
+  }
+}

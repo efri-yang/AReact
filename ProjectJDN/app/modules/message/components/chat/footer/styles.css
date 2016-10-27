@@ -1,0 +1,81 @@
+@import '../../../../../theme/styles/utils/variables.css';
+
+.container {
+  position: relative;
+  height: 160px
+}
+
+.tool-bar {
+	padding: 10px 18px;
+
+	i {
+		margin-right: 15px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &::before{
+      content: '';
+    }
+	}
+}
+
+.biaoqing{
+  background: url('../../../../../theme/images/icon_smile.png') no-repeat left top;
+}
+
+.fujianshangchuan{
+  background: url('../../../../../theme/images/icon_attachment.png') no-repeat left top;
+}
+
+.yunpanwenjian{
+  background: url('../../../../../theme/images/icon_cloud.png') no-repeat left top;
+}
+
+.jieping{
+  background: url('../../../../../theme/images/icon_printscreen.png') no-repeat left top;
+}
+
+.editor {
+	height: calc(100% - 96px) !important;
+
+  textarea {
+		width: 100%;
+		min-height: 90%;
+		border: 0;
+		padding: 0 18px;
+		line-height: 1.5em;
+		resize: none;
+    overflow: hidden;
+	}
+}
+
+.btn-box {
+	position: absolute;
+	width: 100%;
+	bottom: 5px;
+	text-align: right;
+	padding: 10px;
+
+	button 	{
+		width: 110px;
+		height: 32px;
+		line-height: 30px;
+		border-radius: 3px;
+		font-size: 12px;
+    border: none;
+		background: #38adff;
+		color: #fff;
+
+    &:disabled {
+      background: #fcfcfc;
+      color: #676767;
+      border: 1px solid #e6e6e6;
+    }
+
+		&:active {
+			background: #2d9fef;
+		}
+	}
+}

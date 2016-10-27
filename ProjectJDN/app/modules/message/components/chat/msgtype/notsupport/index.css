@@ -1,0 +1,14 @@
+.not {
+  line-height: 22px;
+  padding: 5px 15px;
+}
+
+.not i {
+  color: red;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+:global(.up-msg) .not i {
+  color: #fff;
+}

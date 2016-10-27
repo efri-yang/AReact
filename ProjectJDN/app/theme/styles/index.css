@@ -1,0 +1,19 @@
+/* Do not write any CSS in here, add it to the appropriate module or make a new one */
+
+@charset "UTF-8";
+
+/* 1. Vendors */
+@import '../../../node_modules/purecss/build/base-min.css';
+@import '../../../node_modules/purecss/build/grids-min.css';
+
+/* 2. Configuration and helpers */
+@import './utils/*.css';
+
+/* 3. Base stuff */
+@import './base/*.css';
+
+/* 4. Layout-related sections */
+@import './layout.css';
+
+/* 5. common styles */
+@import './common.css';

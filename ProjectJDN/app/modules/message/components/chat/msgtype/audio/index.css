@@ -1,0 +1,56 @@
+.audio {
+  height: 34px;
+  width: 120px;
+  position: relative;
+}
+
+.audio i {
+  position: absolute;
+  height: 34px;
+  line-height: 34px;
+  left: 10px;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  width: 20px;
+}
+
+.progress {
+  display: inline-block;
+  height: 100%;
+  background: #2d9fef;
+}
+
+:global(.down-msg) .progress {
+  background: #e8e8e8;
+}
+
+.duration {
+  position: absolute;
+  height: 34px;
+  line-height: 34px;
+  left: 40px;
+  display: inline-block;
+}
+
+:global(.down-msg) .audio i {
+  color: #686868;
+}
+
+.red-dot {
+  position: absolute;
+  top: 13px;
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background: red;
+  border-radius: 8px;
+}
+
+:global(.up-msg) .red-dot {
+  left: -20px;
+}
+
+:global(.down-msg) .red-dot {
+  right: -20px;
+}

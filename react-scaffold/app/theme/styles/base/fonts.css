@@ -1,0 +1,39 @@
+/* This file contains all @font-face declarations, if any. */
+@font-face {
+  font-family: "iconfont";
+  src: url('../../fonts/iconfont.eot?t=1472785485'); /* IE9*/
+  src: url('../../fonts/iconfont.eot?t=1472785485#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('../../fonts/iconfont.woff?t=1472785485') format('woff'), /* chrome, firefox */
+  url('../../fonts/iconfont.ttf?t=1472785485') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('../../fonts/iconfont.svg?t=1472785485#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 10个一行 */
+@each $name, $val in
+  (account,password,success-o,warn,contacts-o,contacts,msg,app,cloud,settings,success,error,info,lianxirenshanchu,qungonggao,gerenzhuye,gerenziliao,weibodongtai,xiangcejijin,guanbi,xiazaitupian,xiazai,shanchu,laiwangwenjian,qunshezhi,chongmingming,qunmingchengbianji,xiazaihover,shanchuhover,prev,next,rotate,download,triangleWarn,miandarao,liaotianjilu,biaoqing,fujianshangchuan,yunpanwenjian,jieping,audio,close,left,right,qrcode,burn,xiaoxiweidutubiao),
+  (00,01,02,03,04,27,28,29,2a,2b,17,19,18,21,25,1c,1d,0a,0f,1e,0e,0d,23,20,2d,2e,2f,31,30,24,0c,11,0e,32,33,22,26,1b,13,1f,12,3c,3e,3d,40,41,42) {
+  .icon-$(name) {
+    composes: iconfont;
+  }
+  .icon-$(name):before {
+    content: "\e6$(val)";
+  }
+}
+
+.icon-loading {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  animation: circle infinite .75s linear;
+  border: 2px solid #fff;
+  border-top-color: transparent;
+  border-radius: 100%;
+}

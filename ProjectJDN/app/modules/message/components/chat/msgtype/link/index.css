@@ -1,0 +1,67 @@
+.link {
+  padding: 20px;
+  height: 100px;
+  width: 358px;
+  cursor: pointer;
+  position: relative;
+}
+
+.left-img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 0;
+  line-height: 60px;
+}
+
+.left-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.right-info {
+  float: left;
+  width: 235px;
+}
+
+.title {
+  font-size: 14px;
+  color: #333333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  white-space: nowrap;
+}
+
+.summary {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999999;
+  margin-top: 5px;
+}
+
+.from {
+  color: #999999;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  max-width: 200px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+:global(.up-msg) .title {
+  color: #fff;
+}
+
+:global(.up-msg) .summary {
+  color: #EEE;
+}
+
+:global(.up-msg) .from {
+  color: #DEDEDE;
+}

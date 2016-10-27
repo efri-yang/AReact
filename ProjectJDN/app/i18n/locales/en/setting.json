@@ -1,0 +1,13 @@
+﻿{
+	"on": "Enabled",
+  "off":"Disabled",
+  "group":"Group",
+  "desktopNotice":"Desktop Prompt",
+  "promptTone":"Prompt Tone",
+  "sendMsgShortcuts":"Sending Shortcut",
+  "pressToSend":"Press {{shortcuts}} to send message.",
+  "logout":"Log out",
+  "logoutConfrim":"Are you sure you want to log out?",
+  "logoutWarn":"Are you sure you want to log out {{app_name}}",
+  "logoutConfrimAgain":"Yes"
+}

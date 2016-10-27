@@ -1,0 +1,36 @@
+.video {
+  padding: 0;
+  width: 300px;
+}
+
+.snapshot-container {
+  position: relative;
+  height: auto;
+}
+
+.loading {
+  height: 225px;
+  text-align: center;
+  line-height: 225px;
+}
+
+.snapshot {
+  width: 100%;
+  object-fit: cover;
+}
+
+.play {
+  position: absolute;
+  cursor: pointer;
+  top: 77px;
+  left: 115px;
+  object-fit: cover;
+}
+
+.loading .play {
+  display: none;
+}
+
+.video video {
+  width: 300px;
+}

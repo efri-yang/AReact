@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+  <title></title>
+  <link href="../../favicon.png" rel="icon">
+  <style>
+    html,
+    body {
+      font: 24px/1.5 Tahoma, Arial, Helvetica, "Microsoft YaHei", "宋体", sans-serif;
+      background-color: #fff;
+    }
+
+    ul {
+      margin: 100px auto;
+      padding: 50px;
+      list-style: none;
+      width: 900px;
+      height: 123px;
+      background-color: #f7f7f7;
+      border: 1px solid #eee;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+    }
+
+    li {
+      width: 30%;
+      float: left;
+    }
+
+    .recommend {
+      text-align: center;
+      color: red;
+      font-size: 20px;
+    }
+
+    .or {
+      width: 5%;
+      text-align: center;
+      line-height: 123px;
+      color: #ccc;
+    }
+
+    a {
+      margin: 5px;
+      display: block;
+      background-color: #eee;
+      background-repeat: no-repeat;
+      background-position: 50% 20px;
+      padding-top: 60px;
+      padding-bottom: 15px;
+      text-align: center;
+      border: 1px solid #ccc;
+      text-decoration: none;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px;
+      color: #333;
+    }
+
+    a:hover {
+      background-color: #f7f7f7;
+      text-decoration: none;
+    }
+
+    .chrome {
+      background-image: url(img/chrome.png);
+    }
+
+    .safari {
+      background-image: url(img/safari.png);
+    }
+
+    .ie {
+      background-image: url(img/ie.png);
+    }
+  </style>
+</head>
+
+<body>
+<div id="container">
+  <p id="recommend" class="recommend"></p>
+  <ul>
+    <li><a id="chrome" class="chrome" href="https://www.google.com/chrome/"></a></li>
+    <li id="or1" class="or"></li>
+    <li><a id="safari" class="safari" href=""></a></li>
+    <li id="or2" class="or"></li>
+    <li><a id="IE" class="ie" href="http://windows.microsoft.com/zh-cn/internet-explorer/download-ie">IE 浏览器</a></li>
+  </ul>
+</div>
+<script>
+  (function (isZh) {
+    'use strict';
+    var orText = isZh ? '或' : 'or'
+    document.title = isZh ? '下载浏览器' : 'Download Browser'
+    document.getElementById('recommend').innerHTML = isZh ? '暂不支持您当前使用的浏览器，请使用以下浏览器获得最佳体验' : 'Your current browser version is too old, please use the following browsers for best experience.'
+    document.getElementById('chrome').innerHTML = isZh ? '谷歌浏览器' : 'Google Chrome'
+    document.getElementById('or1').innerHTML = orText
+    document.getElementById('or2').innerHTML = orText
+
+    var safariLink = document.getElementById('safari')
+    var ieLink = document.getElementById('IE')
+
+    if (isZh) {
+      safariLink.href = 'https://support.apple.com/zh-cn/HT204416'
+      safariLink.innerHTML = 'Safari浏览器 (Mac)'
+      ieLink.href = 'http://windows.microsoft.com/zh-cn/internet-explorer/download-ie'
+      ieLink.innerHTML = 'IE 浏览器 (10+)'
+    } else {
+      safariLink.href = 'https://support.apple.com/en-us/ht204416'
+      safariLink.innerHTML = 'Safari (Mac)'
+      ieLink.href = 'http://windows.microsoft.com/en-us/internet-explorer/download-ie'
+      ieLink.innerHTML = 'Internet Explorer 10+'
+    }
+  })(/^zh\-/.test(navigator.language || navigator.browserLanguage))
+</script>
+</body>
+
+</html>

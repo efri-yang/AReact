@@ -1,0 +1,21 @@
+﻿{
+	"recent": "Recent Contact",
+	"friends": "Friend",
+	"group": "Group",
+	"organization": "Organization",
+	"checked": {
+		"hadChecked": "{{n}} users selected"
+	},
+	"homepage": {
+		"title": "Homepage",
+		"delFriend": "Delete Friend",
+		"addFriend": "Add Friend",
+		"sendMsg": "Send Message",
+		"info": "Personal Info",
+		"weibo": "Weibo",
+		"album": "Album",
+		"sureDel": "Delete this friend?"
+	},
+	"files": "Files",
+	"addMember": "Add Member"
+}

@@ -1,0 +1,303 @@
+.nd-tree {
+  margin: 0;
+  color: #686868;
+  padding: 17px 0 17px 16px;
+  font-size: 12px;
+  position: absolute;
+  /*display: table!important;*/
+}
+.nd-tree li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  white-space: nowrap;
+  outline: 0;
+  width: 100%;
+  /*display: table;*/
+}
+.nd-tree > li:first-child > a {
+  padding-top: 0;
+}
+.nd-tree > li:first-child > span:global(.nd-tree-switcher):after {
+  top: 1px;
+}
+.nd-tree li:global(.active) {
+  background: #dbf0ff;
+}
+.nd-tree li a[draggable],
+.nd-tree li a[draggable="true"] {
+  color: #333;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.nd-tree li:global(.drag-over) > a[draggable] {
+  background-color: #316ac5;
+  color: white;
+  border: 1px #316ac5 solid;
+  opacity: 0.8;
+}
+.nd-tree li:global(.drag-over-gap-top) > a[draggable] {
+  border-top: 2px blue solid;
+}
+.nd-tree li:global(.drag-over-gap-bottom) > a[draggable] {
+  border-bottom: 2px blue solid;
+}
+.nd-tree li:global(.filter-node) > a {
+  color: #a60000!important;
+  font-weight: bold!important;
+}
+.nd-tree li ul {
+  margin: 0;
+  padding: 0 0 0 12px;
+}
+.nd-tree li ul:global(.nd-tree-line) {
+  background: url("https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif") 0 0 repeat-y;
+}
+.nd-tree li a {
+  display: inline-block;
+  padding: 10px 0;
+  text-decoration: none;
+  vertical-align: top;
+  cursor: pointer;
+}
+.nd-tree li a > span:global(.nd-tree-title) > div {
+  display: inline;
+  padding-right: 20px;
+}
+
+.nd-tree li:global(.lastest) > a > span:global(.nd-tree-title) {
+  font-weight: bold;
+  color: #2d9fef;
+}
+.nd-tree li:global(.user-node) a {
+  line-height: 30px;
+  cursor: pointer;
+  padding: 5px 0;
+  margin-left: -10px;
+  color: #282828;
+
+  div:global(.img) {
+    float: left;
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+
+    > img {
+      border-radius: 2px;
+    }
+  }
+
+  span:global(.checkbox) {
+    position: relative;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-top: 7px;
+    margin-right: 10px;
+    background: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    cursor: pointer;
+  }
+}
+.nd-tree:global(.checked) li:global(.user-node) a {
+  cursor: default;
+}
+
+.nd-tree li:global(.user-node.checked){
+  background: #e2e3e9;
+
+  a span:global(.checkbox) {
+    border: 1px solid #38adff;
+
+    &:hover {
+      background: #fff;
+    }
+
+    &:after {
+      content: ' ';
+      position: absolute;
+      display: inline-block;
+      width: 10px;
+      height: 6px;
+      border-width: 0 0px 1px 1px;
+      border-style: solid;
+      border-color: #38adff;
+      top: 2px;
+      left: 2px;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+.nd-tree li:global(.user-node) {
+  &:hover {
+    background: #e6f5ff;
+  }
+
+  a span:global(.checkbox) {
+    &:hover {
+      background: #ededed;
+    }
+  }
+}
+
+.nd-tree li span:global(.nd-tree-switcher),
+.nd-tree li span:global(.nd-tree-checkbox),
+.nd-tree li span:global(.nd-tree-iconEle) {
+  position: relative;
+  line-height: 16px;
+  margin-top: 5px;
+  margin-right: 2px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  border: 0 none;
+  cursor: pointer;
+  outline: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-image: url("https://t.alipayobjects.com/images/T1.ANfXhXtXXXXXXXX.png");
+}
+.nd-tree li span:global(.nd-tree-switcher) {
+  background-image: none;
+
+  &:after {
+    content: ' ';
+    position: absolute;
+    border-width: 6px 5px 0;
+    border-style: solid;
+    border-color: #979ba5 transparent transparent;
+    top: 11px;
+    left: 4px;
+    transform: rotate(-90deg);
+  }
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-roots_open),
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-center_open),
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-bottom_open),
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-noline_open) {
+  &:after {
+    transform: rotate(-45deg);
+  }
+}
+
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-center_docu),
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-bottom_docu),
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-noline_docu) {
+  &:after {
+    content: none;
+  }
+}
+.nd-tree li span:global(.nd-tree-icon_loading) {
+  margin-top: -1px;
+  margin-right: 2px;
+  vertical-align: top;
+  background: url(https://t.alipayobjects.com/images/rmsweb/T1YxhiXgJbXXXXXXXX.gif) no-repeat scroll 0 0 transparent;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-roots_open) {
+  background-position: -93px -56px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-roots_close) {
+  background-position: -75px -56px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-center_open) {
+  background-position: -92px -18px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-center_close) {
+  background-position: -74px -18px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-bottom_open) {
+  background-position: -92px -36px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-bottom_close) {
+  background-position: -74px -36px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-noline_open) {
+  background-position: -92px -72px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-noline_close) {
+  background-position: -74px -72px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-center_docu) {
+  background-position: -56px -18px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-bottom_docu) {
+  background-position: -56px -36px;
+}
+.nd-tree li span:global(.nd-tree-switcher.nd-tree-noline_docu) {
+  background: none;
+}
+.nd-tree li span:global(.nd-tree-checkbox) {
+  width: 13px;
+  height: 13px;
+  margin: 0 3px;
+  background-position: 0 0;
+}
+.nd-tree li span:global(.nd-tree-checkbox-checked) {
+  background-position: -14px 0;
+}
+.nd-tree li span:global(.nd-tree-checkbox-indeterminate) {
+  background-position: -14px -28px;
+}
+.nd-tree li span:global(.nd-tree-checkbox-disabled) {
+  background-position: 0 -56px;
+}
+.nd-tree li span:global(.nd-tree-checkbox.nd-tree-checkbox-checked.nd-tree-checkbox-disabled) {
+  background-position: -14px -56px;
+}
+.nd-tree li span:global(.nd-tree-checkbox.nd-tree-checkbox-indeterminate.nd-tree-checkbox-disabled) {
+  position: relative;
+  background: #ccc;
+  border-radius: 3px;
+}
+.nd-tree li span:global(.nd-tree-checkbox.nd-tree-checkbox-indeterminate.nd-tree-checkbox-disabled)::after {
+  content: ' ';
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  width: 5px;
+  height: 0;
+  border: 2px solid #fff;
+  border-top: 0;
+  border-left: 0;
+}
+:global(.nd-tree-child-tree) {
+  display: none;
+}
+:global(.nd-tree-child-tree-open) {
+  /*display: table !important;*/
+  width: 100%;
+}
+:global(.nd-tree-treenode-disabled) > span,
+:global(.nd-tree-treenode-disabled) > a,
+:global(.nd-tree-treenode-disabled) > a span {
+  color: #ccc;
+  cursor: not-allowed;
+}
+:global(.nd-tree-node-selected) {
+  /*background-color: #ffe6b0;
+  border: 1px #ffb951 solid;
+  opacity: 0.8;*/
+}
+:global(.nd-tree-icon__open) {
+  margin-right: 2px;
+  background-position: -110px -16px;
+  vertical-align: top;
+}
+:global(.nd-tree-icon__close) {
+  margin-right: 2px;
+  background-position: -110px 0;
+  vertical-align: top;
+}

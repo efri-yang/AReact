@@ -1,0 +1,25 @@
+{
+	"notice": {
+		"title": "Group Bulletin",
+		"edit": "Edit Bulletin",
+		"empty": "No announcement."
+	},
+	"settings": {
+		"title": "Group Settings",
+		"confirm": "Confirm",
+		"rename": "Rename",
+		"num": "{{n}} Members",
+		"sureDel": "Are you sure you want to delete \"{{name}}\"?",
+		"delAndQuit": "Delete and Quit",
+		"delAndQuitTitle": "Disband",
+		"sureDelAndQuit": "Disband this group?",
+		"quit": "Quit",
+		"quitTitle": "Quit",
+		"sureQuit": "Quit this group?"
+	},
+	"files": "Group Sharing",
+	"uFileEmpty": "No files.",
+	"gFileEmpty": "No sharing files.",
+	"empty": "Empty",
+	"inGroup": "{{names}} already in the group."
+}

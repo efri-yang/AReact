@@ -1,0 +1,10 @@
+﻿{
+	"search": "Search Contact/Group",
+  "notFoundTip":"No info related to \"{{keyword}}\" was found.",
+  "searchingTip":"Searching info related to \"{{keyword}}\"...",
+  "contact":"Contact",
+  "group":"Group",
+  "fold":"Hide",
+  "unfold":"Show",
+	"organization": "Organization"
+}

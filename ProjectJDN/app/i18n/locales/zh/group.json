@@ -1,0 +1,25 @@
+{
+	"notice": {
+		"title": "群公告",
+		"edit": "编辑公告",
+		"empty": "还未添加群公告"
+	},
+	"settings": {
+		"title": "群设置",
+		"confirm": "确认",
+		"rename": "重命名",
+		"num": "群成员 {{n}} 人",
+		"sureDel": "是否确认删除“{{name}}”",
+		"delAndQuit": "删除并退出",
+		"delAndQuitTitle": "确认解散",
+		"sureDelAndQuit": "是否确认解散该群",
+		"quit": "退出",
+		"quitTitle": "确认退出",
+		"sureQuit": "是否确认退出该群"
+	},
+	"files": "群共享",
+	"uFileEmpty": "暂无来往文件",
+	"gFileEmpty": "暂无共享文件",
+	"empty": "空空如也",
+	"inGroup": "{{names}}已在群组中"
+}

@@ -1,0 +1,10 @@
+{
+	"search": "搜索联系人/群组",
+  "notFoundTip":"云端没有搜索到 \"{{keyword}}\" 的信息",
+  "searchingTip":"正在搜索 \"{{keyword}}\" 的信息...",
+  "contact":"联系人",
+  "group":"群组",
+  "fold":"收起",
+  "unfold":"显示全部",
+	"organization": "组织"
+}

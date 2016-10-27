@@ -1,0 +1,68 @@
+.header {
+	display: inline-block;
+    width: 100%;
+	padding: 10px 20px;
+	border-bottom: 1px solid #e6f5ff;
+}
+
+.info {
+	display: inline-block;
+	float: left;
+	width: calc(100% - 150px);
+
+	> .name {
+		display: table !important;
+		height: 40px;
+
+		span {
+			display: table-cell;
+			vertical-align: middle;
+			color: #676767;
+		}
+
+		> i {
+			display: table-cell;
+			vertical-align: middle;
+			color: #c7c7c7;
+			font-size: 12px;
+			padding-left: 7px;
+			padding-top: 3px;
+		}
+
+		> .in-the-input {
+			color: #8f8f8f;
+			padding-left: 7px;
+		}
+	}
+
+	.img {
+		display: inline-block;
+		float: left;
+		width: 40px;
+		height: 40px;
+		margin-right: 10px;
+
+		img {
+			border-radius: 2px;
+		}
+	}
+}
+
+.operation {
+	display: inline-block;
+	float: right;
+
+	> div {
+		margin-top: 8px;
+		display: inline-block;
+		margin-left: 15px;
+
+		&:first-child {
+			margin-left: 0;
+		}
+	}
+}
+
+.maindarao {
+	color: #c7c7c7;
+}

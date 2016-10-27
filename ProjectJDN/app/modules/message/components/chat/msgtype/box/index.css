@@ -1,0 +1,166 @@
+.box {
+  width: 358px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.box span {
+  line-height: 22px;
+  word-break: break-all;
+}
+
+.box :global(.row) {
+  width: 100%;
+  padding: 5px;
+}
+
+.box :global(.col-1) {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  width: 16.6666%;
+}
+
+.box :global(.col-2) {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px;
+  width:33.3333%;
+}
+
+.box :global(.col-3) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50%;
+  padding: 5px;
+}
+
+.box :global(.col-4) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 66.6666%;
+  padding: 5px;
+}
+
+.box :global(.col-5) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 83.3333%;
+  padding: 5px;
+}
+
+.box :global(.col-6) {
+  display: inline-block;
+  vertical-align: middle;
+  width: 100%;
+  padding: 5px;
+}
+
+.box :global(.row) img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.box :global(.img-spinner) {
+  vertical-align: middle;
+}
+
+.box hr {
+  border: none;
+  background-color: #e9e9e9;
+  height: 1px;
+}
+
+:global(.link-default) {
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  color: #38adff;
+}
+
+:global(.btn-default) {
+  cursor: pointer;
+  color: #676767;
+  border: solid 1px #ededed;
+  border-radius: 2px;
+  background: #fff;
+  /*height: 25px;*/
+  line-height: 25px;
+  padding: 0 10px;
+}
+
+:global(.button-default) {
+  cursor: pointer;
+  color: #676767;
+  border: solid 1px #ededed;
+  border-radius: 2px;
+  background: #fff;
+  /*height: 25px;*/
+  line-height: 25px;
+  padding: 0 10px;
+}
+
+:global(.arrow-default) {
+  cursor: pointer;
+  border: none;
+  min-width: 20px;
+  min-height: 25px;
+  padding-right: 20px;
+  line-height: 25px;
+  background: url(theme/images/arrow.png) no-repeat center right;
+  background-size: 20px 20px;
+  color: #999999;
+}
+
+.box a, button {
+  cursor: pointer;
+}
+
+.box a:disabled,
+.box button:disabled {
+  cursor: not-allowed;
+  color: #808080;
+}
+
+:global(.img-square) {  /*正方形*/
+}
+
+:global(.img-default) {  /*正常宽高比*/
+}
+
+:global(.img-circle) {  /*圆形*/
+}
+
+.img-container {
+  width: 100%;
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
+  background-origin: padding-box !important;
+}
+
+.img-default-container {
+  height: auto;
+}
+
+.img-square-container {
+  height: 0px !important;
+  background-size: cover !important;
+}
+
+.img-circle-container {
+  height: 0px !important;
+  border-radius: 50% !important;
+}
+
+.loading {
+  width: 100%;
+  font-size: 0;
+  text-align: center;
+}
+
+.loading img {
+  vertical-align: middle;
+  display: inline-block !important;
+  width: 32px !important;
+  height: 32px !important;
+}

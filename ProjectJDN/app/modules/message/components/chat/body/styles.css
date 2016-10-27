@@ -1,0 +1,4 @@
+.container {
+  height: calc(100% - 220px);
+  border-bottom: 1px solid #e6f5ff;
+}

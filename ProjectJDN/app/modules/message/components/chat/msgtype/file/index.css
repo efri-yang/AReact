@@ -1,0 +1,64 @@
+.file {
+  padding: 10px;
+  height: 84px;
+  min-width: 200px;
+}
+
+.file-icon {
+  width: 64px;
+  height: 64px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 64px;
+  font-size: 0;
+}
+
+.file-icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: cover;
+}
+
+.loading {
+  width: 32px;
+  height: 32px;
+  padding: 16px;
+}
+
+.info {
+  float: left;
+  max-width: 240px;
+}
+
+.name {
+  font-size: 12px;
+  margin-top: 5px;
+  min-height: 35px;
+}
+
+.name span {
+  max-width: 240px;
+  min-width: 120px;
+  overflow: hidden;
+  word-wrap: break-word;
+  word-break: normal;
+  display: inline-block;
+}
+
+.size {
+  margin-top: 5px;
+}
+
+.size span {
+  color: #8f8f8f;
+}
+
+:global(.up-msg) .size span {
+  color: #d3edff;
+}
+
+.size a {
+  float: right;
+  text-decoration: none;
+}

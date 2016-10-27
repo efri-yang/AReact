@@ -1,0 +1,48 @@
+.contacts-area {
+	background: #ffffff;
+	width: 100%;
+	height: 490px;
+}
+
+.contacts-body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.contacts-left {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 275px;
+	height: 100%;
+
+	span:global(.rc-select-selection) {
+    	border-color: #d7d7d7;
+	}
+
+	div:global(.tab) {
+		background: #f4f5f9;
+
+		div:global(.tab-nav) {
+			ul li {
+				background: #ffffff;
+				border-color: #d7d7d7;
+			}
+
+			ul li:global(.active) {
+				background: #f4f5f9;
+				border-bottom-color: transparent; 
+			}
+		}
+	}
+}
+
+.contacts-right {
+	position: absolute;
+	top: 0;
+	left: 275px;
+	width: calc(100% - 275px);
+	height: 100%;
+	border-left: 1px solid #d7d7d7;
+}

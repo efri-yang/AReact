@@ -1,0 +1,22 @@
+﻿{
+  "login": {
+    "form": {
+      "title": "Log in",
+      "account": {
+        "placeholder": "Work Number",
+        "error": "Account Format: $t(login.form.account.placeholder)"
+      },
+      "password": {
+        "placeholder": "Password",
+        "error": "Please enter the password."
+      },
+      "login": "Log in"
+    },
+    "qr": {
+      "open99u": "Open Mobile 99U",
+      "scan": "Scan",
+      "error": "Failed to get QR code."
+    },
+    "wait": "login..."
+  }
+}

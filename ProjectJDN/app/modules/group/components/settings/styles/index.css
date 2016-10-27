@@ -1,0 +1,258 @@
+.qunshezhi {
+	cursor: pointer;
+  	display: inline-block;
+  	width:21px;
+  	height: 20px;
+  	background: url('../../../../../theme/images/icon_setting.png') no-repeat left top;
+  	overflow: hidden;
+  	position: relative;
+  	top:5px;
+	font-size: 20px;
+
+	&:hover {
+  		background: url('../../../../../theme/images/icon_setting_hover.png') no-repeat left top;
+	}
+
+    &::before{
+      display: none;
+    }
+}
+
+.settings {
+	width: 100%;
+	height: calc(100% - 55px);
+}
+
+.body {
+	position: relative;
+	width: 100%;
+	height: calc(100% - 72px);
+}
+
+.info {
+	padding: 10px 20px;
+	color: #282828;
+	background: #f4f5f9;
+	border-top: 1px solid #e9e9e9;
+
+	img {
+		float: left;
+		margin-right: 10px;
+		width: 40px;
+		height: 40px;
+		border-radius: 3px;
+	}
+
+	span:first-child {
+		float: left;
+	}
+}
+
+.view-box {
+	display: inline-block;
+	width: calc(100% - 60px);
+}
+
+.view-box span{
+	float: left;
+	display: inline-block;
+	line-height: 25px;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: calc(100% - 30px);
+}
+
+.eidt-box {
+	display: inline-block;
+	width: 300px;
+	position: relative;
+
+	input {
+		width: 250px;
+		padding: 0 64px 0 10px;
+		height: 25px;
+		line-height: 23px;
+		border: 1px solid #e6e6e6;
+		color: #282828;
+		font-size: 12px;
+		border-radius: 2px;
+	}
+
+	button {
+		position: absolute;
+		top: 2px;
+		right: 2px;
+		width: 54px;
+		height: 21px;
+		line-height: 21px;
+		border-radius: 2px;
+		font-size: 12px;
+		background: #2d9fef;
+		color: #ffffff;
+		border: 0;
+
+		&:hover {
+			background: #38adff;
+		}
+	}
+}
+
+.chongmingming, .qunmingchengbianji {
+	margin-left: 10px;
+	cursor: pointer;
+	font-size: 14px;
+	margin-bottom: 10px;
+	line-height: 25px;
+}
+
+.qunmingchengbianji {
+	color: #38adff;
+}
+
+.count {
+	font-size: 12px;
+	color: #8f8f8f;
+}
+
+.members {
+    position: absolute;
+    width: 100%;
+	height: calc(100% - 66px);
+    top: 66px;
+}
+
+.loading {
+	text-align: center;
+	padding: 20px 5px;
+	display: inline-block;
+	width: 100%;
+}
+
+.members-box {
+	padding: 20px 5px;
+	display: inline-block;
+	width: 100%;
+
+	.img-box {
+		display: inline-block;
+		float: left;
+		width: 100%;
+		height: 40px;
+
+		img {
+			margin: 0 auto;
+		}
+	}
+}
+
+div.add, div.del {
+	position: relative;
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	margin: 0px 13px 32px;
+	background: #fcfcfc;
+	border-radius: 2px;
+	border: 1px solid #e9e9e9;
+	cursor: pointer;
+	float: left;
+
+	span {
+		position: absolute;
+		display: inline-block;
+		width: 28px;
+		height: 2px;
+		background: #cdcdcd;
+		float: left;
+		margin: 18px 5px;
+	}
+}
+
+div.add:hover, div.del:hover {
+	background: #38adff;
+	border-color: #38adff;
+
+	span {
+		background: #ffffff;
+	}
+}
+
+div.add {
+	span:first-child {
+		transform: rotate(90deg);
+	}
+}
+
+.members-box > div.member {
+	position: relative;
+	display: inline-block;
+	width: 66px;
+	height: 72px;
+	float: left;
+	text-align: center;
+
+	img {
+		display: block;
+		margin: 0 auto;
+		border-radius: 2px;
+	}
+
+	p {
+		padding: 5px 5px 8px;
+		width: 100%;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		white-space: nowrap;
+	}
+}
+
+.members-box > div.member .del-member {
+	position: absolute;
+	top: -6px;
+	right: 6px;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-radius: 6px;
+	background: #f53f3b;
+	cursor: pointer;
+
+	&:hover {
+		background: #ff514e;
+	}
+
+	span {
+		display: inline-block;
+		width: 8px;
+		height: 2px;
+		background: #ffffff;
+		float: left;
+		margin: 5px 2px;
+	}
+}
+
+.footer {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	text-align: center;
+	background: #f4f5f9;
+	padding: 20px 0;
+
+	button 	{
+		width: 110px;
+		height: 32px;
+		line-height: 32px;
+		border-radius: 3px;
+		font-size: 12px;
+		background: #ff6f6f;
+		color: #ffffff;
+		border: 0;
+		margin-right: 15px;
+
+		&:hover {
+			background: #fd7c7c;
+		}
+	}
+}

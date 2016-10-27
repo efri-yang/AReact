@@ -1,0 +1,256 @@
+$login-blue: rgb(56,173,255);
+$login-error: #fa6a6a;
+
+.container {
+  width: 680px;
+  overflow: hidden;
+  box-shadow: rgba(0,0,0,0.15) 1px 4px 12px;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background: #38adff;
+}
+
+.sso-container {
+  box-sizing: border-box;
+  margin: 0 auto;
+  text-align: center;
+  .text {
+    margin-top: 28px;
+  }
+}
+
+.form-container {
+  display: inline-block;
+  width: 440px;
+  min-height: 320px;
+  background-color: #ecf1f8;
+  border-radius: 5px 0 0 5px;
+  float: left;
+  padding-bottom: 20px;
+
+  form {
+    width: 320px;
+    margin: 22px auto;
+    &:global(.error) {
+      :global (.required:after) {
+        display: block;
+      }
+    }
+    :global(.validation-error) {
+      height: 24px;
+      margin: 10px 0;
+      border: 1px solid #e95555;
+      text-align: center;
+      color: #fff;
+      background-color: $login-error;
+
+      & + button {
+        margin-top: 0
+      }
+    }
+  }
+
+  [name="name"] {
+    border-bottom: none;
+    /*border-radius: 4px 4px 0 0;*/
+  }
+
+  /*[name="password"] {
+    border-radius: 0 0 4px 4px;
+  }*/
+}
+
+:global .form-item {
+  position: relative;
+  color: #9caec7;
+  i {
+    position: absolute;
+    top: 12px;
+    left: 10px;
+    font-size: 20px;
+    color: #9caec7;
+  }
+
+  input {
+    width: 100%;
+    height: 48px;
+    padding-left: 40px;
+    border: 1px solid #e2e7ef;
+    outline: none;
+    font-size: 14px;
+
+    &::-webkit-input-placeholder {
+      color: #9caec7 !important;
+    }
+
+    &::-moz-placeholder {
+      color: #9caec7 !important;
+    }
+
+    &:-ms-input-placeholder {
+      color: #9caec7 !important;
+    }
+  }
+
+  &.error:after,
+  &.required:after,
+  &.success:after {
+    position: absolute;
+    top: 6px;
+    right: 0;
+    font-family: iconfont!important;
+    width: 32px;
+    height: 32px;
+    line-height: 32px;
+    text-align: center;
+    font-size: 18px;
+    animation: zoomIn .3s cubic-bezier(.18,.89,.32,1.28);
+  }
+
+  &.error:after,
+  &.required:after {
+    content: '\E603';
+    color: $login-error;
+  }
+
+  &.required:after {
+    display: none;
+  }
+
+  &.success:after {
+    content: '\E602';
+    color: $login-blue;
+  }
+}
+
+.form-title {
+  padding: 30px 0 0 60px;
+  font-size: 24px;
+  color: #5b6480;
+}
+
+.button {
+  width: 100%;
+  height: 48px;
+  font-size: 24px;
+  /*border-radius: 4px;*/
+  margin-top: 20px;
+  color: #fff;
+  background-color: $login-blue;
+  cursor: pointer;
+
+  display: inline-block;
+  margin-bottom: 0;
+  font-weight: 400;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  line-height: 1.5;
+  padding: 4px 11px;
+  user-select: none;
+  transition: background .3s cubic-bezier(.645,.045,.355,1);
+  transform: translateZ(0);
+
+  &:hover, &.wave {
+    background-color: #60bdff;
+    border-color: #60bdff;
+  }
+  &:disabled {
+    cursor: wait;
+  }
+}
+
+/* qrcode relative */
+.qr-container {
+  float: right;
+  width: 240px;
+  height: 320px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  background-color: $login-blue;
+
+  span {
+    line-height: 1.5;
+  }
+}
+
+.qrcode {
+  position: relative;
+  background: url("../images/qrcode-big.png") no-repeat;
+  background-size: 160px 160px;
+  width: 160px;
+  margin: 45px auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  font-size: 16px;
+  .back {
+    line-height: normal;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    cursor: pointer;
+    &:before {
+      pointer-events: none;
+      position: absolute;
+      content: '';
+      height: 30px;
+      width: 30px;
+      top: 0;
+      right: 0;
+      background: linear-gradient(225deg, transparent 45%, #aaaaaa 50%, #cccccc 56%, white 80%);
+      box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.4);
+    }
+  }
+  i {
+    display: block;
+    margin-top: -2px;
+    font-size: 30px;
+    color: #000;
+  }
+}
+
+.lang-container {
+  text-align: center;
+}
+
+.lang-change {
+  margin-right: 15px;
+  color: #5b6480;
+  vertical-align: middle;
+}
+
+.wave {
+  background-image: url("theme/images/wave_small.png");
+  animation: wave-animation 1s infinite linear, loading-animation 3s infinite linear alternate;
+  background-size: 200px 100px;
+  background-repeat: repeat-x;
+  opacity: 1;
+}
+
+@keyframes wave-animation {
+  0% {
+    background-position: 0 bottom;
+  }
+
+  100% {
+    background-position: 30px bottom;
+  }
+}
+@keyframes loading-animation {
+  0% {
+    background-size: 30px 0px;
+  }
+
+  100% {
+    background-size: 30px 45px;
+  }
+}

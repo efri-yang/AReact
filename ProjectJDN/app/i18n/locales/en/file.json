@@ -1,0 +1,12 @@
+{
+	"sendAgian": "Send Again",
+	"sureDelUploadFile": "Uploading the file. Still want to delete it?",
+    "download": "Download",
+    "preview": "Preview",
+    "remove": "Remove",
+    "retry": "Failed to upload, Try again",
+    "upload": "Upload",
+    "uploading": "Uploading",
+    "upload_failed": "Failed to upload.",
+    "upload_files": "Add Files"
+}

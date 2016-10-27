@@ -1,0 +1,31 @@
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+
+  &:before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 40%;
+    display: block;
+    margin: -117px 0 0 -117px;
+    overflow: hidden;
+    width: 233px;
+    height: 233px;
+    background: url("../images/welcome.jpg") no-repeat left top;
+  }
+}
+
+.text {
+  display: block;
+  width: 100%;
+  position: absolute;
+  text-align: center;
+  font-size: 16px;
+  color: #282828;
+  line-height: 30px;
+  top: 40%;
+  margin-top: 130px;
+}

@@ -1,0 +1,11 @@
+/*This file contains all application-wide CSS variables.*/
+
+$text-color: #222;
+$dark-blue: rgb(79,165,231);
+$mid-blue: rgb(123,194,245);
+$light-blue: rgb(203,230,249);
+$dark-grey: rgb(40,40,40);
+$light-grey: rgb(103,103,103);
+
+$main-width: 960px;
+$main-height: 620px;

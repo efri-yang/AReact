@@ -1,0 +1,12 @@
+{
+	"sendAgian": "再次发送",
+	"sureDelUploadFile": "该文件正在上传，是否确定删除？",
+    "download": "下载",
+    "preview": "预览",
+    "remove": "移除",
+    "retry": "上传失败，重新上传",
+    "upload": "上传",
+    "uploading": "上传中",
+    "upload_failed": "上传失败",
+    "upload_files": "添加文件"
+}

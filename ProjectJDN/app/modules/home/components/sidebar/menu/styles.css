@@ -1,0 +1,60 @@
+@import '../../../../../theme/styles/utils/variables.css';
+
+.container {
+  margin-top: 5px;
+}
+
+.item {
+  composes: f14 from 'theme/styles';
+  position: relative;
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  padding-left: 25px;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color .3s;
+
+  &:hover, &.active {
+    background-color: $dark-blue;
+    color: #fff;
+
+    .iconc[data-type="msg"]:before {
+      content: '\E605'
+    }
+    .iconc[data-type="contacts"]:before {
+      content: '\E604'
+    }
+    .iconc[data-type="cloud"]:before {
+      content: '\E607'
+    }
+    .iconc[data-type="app"]:before {
+      content: '\E606'
+    }
+  }
+
+  &.active {
+    border-top: 1px solid #48a0dd;
+    border-bottom: 1px solid #48a0dd;
+  }
+}
+
+.iconc {
+  position: absolute;
+  font-size: 20px;
+}
+
+[data-type="msg"] {
+  font-size: 20px;
+}
+
+.text {
+  padding-left: 26px;
+}
+
+.unread {
+  composes: mesNum from 'theme/styles';
+  position: absolute;
+  left: 35px;
+  top: 8px;
+}

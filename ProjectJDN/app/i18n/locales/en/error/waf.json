@@ -1,0 +1,20 @@
+﻿{
+  "WAF/AUTH_INVALID_TIMESTAMP": "Invalid time stamp.",
+  "WAF/AUTH_INVALID_TOKEN": "Invalid token.",
+  "WAF/AUTH_TOKEN_EXPIRED": "Token has expired.",
+  "WAF/BAD_GATEWAY": "Invalid gateway.",
+  "WAF/BAD_REQUEST": "Invalid request.",
+  "WAF/INTERNAL_SERVER_ERROR": "Server internal error.",
+  "WAF/INVALID_ARGUMENT": "Invalid parameter.",
+  "WAF/METHOD_NOT_ALLOWED": "The method is not supported.",
+  "WAF/NOT_ACCEPTABLE": "Server failed to provide the required format.",
+  "WAF/URI_NOT_FOUND": "Address does not exist.",
+  "WAF/NOT_FOUND": "Path does not exist.",
+  "WAF/REQUEST_DENIED": "Request denied.",
+  "WAF/REQUEST_RATE_LIMITED": "Requested too frequently.",
+  "WAF/REQUIRE_ARGUMENT": "Parameter is missing.",
+  "WAF/SERVICE_UNAVAILABLE": "Service is not available.",
+  "WAF/UNAUTHORIZED": "Unauthorized.",
+  "WAF/UNSUPPORTED_MEDIA_TYPE": "Server failed to provide the required format.",
+  "WAF/ACCESS_DENIED":"Unauthorized."
+}

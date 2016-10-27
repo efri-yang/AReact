@@ -1,0 +1,152 @@
+.modal-content {
+  padding: 30px;
+  font-size: 14px;
+  color: #676767;
+}
+
+.setting {
+  padding: 30px;
+  font-size: 14px;
+  color: #676767;
+}
+
+.setting-item {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+
+.setting-item>div:first-child {
+  text-align: right;
+}
+
+.setting-item>div:last-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.radios {
+  text-align: left;
+}
+
+.radios>div:first-child {
+  margin-bottom: 10px;
+}
+
+.radios label span:last-child {
+  margin-left: 5px;
+}
+
+:global(.rc-radio) {
+  vertical-align: middle;
+}
+
+:global(.rc-switch) {
+  width: 80px;
+  border-radius: 2px;
+  background: #c6c6c6;
+  border: none;
+
+  &:after {
+    width: 25px;
+    border-radius: 0;
+    top: 2px;
+  }
+}
+
+:global(.rc-switch-checked) {
+  background: #38adff;
+  &:after {
+    left: 48px;
+  }
+}
+
+:global(.rc-switch-inner) {
+  left: 30px;
+}
+
+.radio {
+  >span {
+     display: inline-block;
+     width: 14px;
+     height: 14px;
+     background-color: #fff;
+     border: 1px solid #c8ccd5;
+     border-radius: 3px;
+     cursor: pointer;
+     margin-right: 5px;
+     vertical-align: middle;
+  }
+
+  i {
+    color: #38adff;
+    display: block;
+    font-size: 12px;
+
+    &:hover {
+      color: #38adff;
+    }
+  }
+}
+
+.checked {
+  >span {
+    border-color: #38adff;
+  }
+}
+
+.exit {
+  padding-top: 30px;
+
+  >button {
+    background: #ff6f6f;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 40px;
+  }
+}
+
+.modal-btns {
+  padding: 30px 0 0;
+  text-align: center;
+  border-top: 2px solid #f3f3f3;
+
+  button {
+    width: 145px;
+    text-align: center;
+    padding: 5px 0;
+    border: none;
+    border-radius: 3px;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+
+  .logout {
+    background: #ff6f6f;
+    color: #fff;
+  }
+
+  .confirm {
+    border: 1px solid #e6e6e6;
+    color: #686868;
+  }
+
+  .cancel {
+    margin-left: 20px;
+    background: #38adff;
+    color: #fff;
+  }
+}
+
+.logout-warn {
+  text-align: center;
+
+  i {
+    font-size: 65px;
+    color: #38adff;
+  }
+
+  p {
+    padding: 30px 0;
+  }
+}

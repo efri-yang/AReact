@@ -1,0 +1,52 @@
+﻿{
+  "app": {
+    "name": "ND 99U"
+  },
+  "home": "Home",
+  "language": {
+    "zh-CN": "Simplified Chinese",
+    "en-US": "English"
+  },
+  "changeLanguage": "Select a language",
+  "commonError": "Please log in again.",
+  "accessDenied": "Access denied.",
+  "pageNotExist": "This page does not exist.",
+  "sidebar": {
+    "msg": "Message",
+    "contacts": "Contact",
+    "cloud": "Disk",
+    "app": "App"
+  },
+  "loading": "Loading data...",
+  "inputMax": "No more than {{n}} characters.",
+  "confirm": "OK",
+  "cancel": "Cancel",
+  "tip": "Prompt",
+  "confirmDel": "Delete",
+  "sureDel": "Are you sure you want to delete {{name}}?",
+  "del": "Delete",
+  "uploader": "Uploader: ",
+  "download": "Download",
+  "deleted": "Deleted",
+  "dlImmediately": "Download",
+  "setting": "Settings",
+  "notImplementYet":"Not available.",
+  "intro": "Let's chat!",
+  "offline": {
+    "title": "Disconnection Prompt",
+    "kicked": "Your account has been logged in somewhere else.",
+    "tip": "Diconnected. Please check your network settings and log in again."
+  },
+  "send": "Send",
+  "sendFailure": "Failed to send.",
+  "reachMaxLengthLimit": "The message is too long. Please transfer as a file.",
+  "abnormal": "Error",
+  "uploadFile": "Upload",
+  "getHistoryMsgFailed": "Failed to get history message. Please try again.",
+  "moreThanOne":"Someone",
+  "uploadImage": "Please select a photo of {{type}} type to send.",
+  "comma": ", ",
+  "close": "Close",
+  "translatingMsg": "Translating...",
+  "translateFailed": "Translating failed. Please refresh to try again."
+}

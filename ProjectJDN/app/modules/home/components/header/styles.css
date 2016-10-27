@@ -1,0 +1,35 @@
+@import '../../../../theme/styles/utils/variables.css';
+
+.container {
+  height: 60px;
+  line-height: 60px;
+  background-color: $dark-blue;
+  color: #fff;
+}
+
+.icon {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  background: url("../../../../static/logo.png") no-repeat;
+  background-size: cover;
+  vertical-align: middle;
+}
+
+.brand {
+  padding: 0 26px;
+  i {
+    margin-top: -5px;
+    margin-right: 15px;
+  }
+
+  &-text {
+    composes: f16 from 'theme/styles';
+  }
+}
+
+.online {
+  composes: f12 from 'theme/styles';
+  float: right;
+  margin-right: 20px;
+}

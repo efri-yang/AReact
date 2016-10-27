@@ -1,0 +1,40 @@
+.header {
+  position: relative;
+  height: 55px;
+  line-height: 55px;
+  padding: 0 20px;
+  background: #f4f5f9;
+  color: #282828;
+}
+
+.guanbi {
+  position: absolute;
+  right: 20px;
+  color: #9e9fa1;
+  cursor: pointer;
+  font-weight: bold;
+
+  &:hover {
+    color: #38adff;
+  }
+}
+
+.liaotianjilu {
+  color: #9e9fa1;
+  cursor: pointer;
+  font-size: 22px;
+
+  &:hover {
+    color: #38adff;
+  }
+}
+
+.body {
+  height: calc(100% - 55px);
+}
+
+.iframe {
+  border: none;
+  height: calc(100% - 55px);
+  width: 100%;
+}

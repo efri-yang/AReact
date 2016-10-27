@@ -1,0 +1,13 @@
+.left-area {
+	height: 100%;
+  position: relative;
+}
+
+.search-box {
+	height: 50px;
+	background: #f6faff;
+}
+
+.contacts-box {
+	height: calc(100% - 50px);
+}

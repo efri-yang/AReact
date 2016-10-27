@@ -1,0 +1,9 @@
+.container {
+	height: 100%;
+}
+
+.chat-container {
+  display: inline-block;
+  height: 100%;
+  width: calc(100% - 275px);
+}
