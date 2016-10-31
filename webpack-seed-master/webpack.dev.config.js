@@ -1,4 +1,7 @@
 module.exports = {
+	devServer: { 
+		open:true
+	},
   entry: require('./webpack-config/entry.config.js'),
 
   output: require('./webpack-config/output.config.js'),
