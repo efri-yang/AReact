@@ -4,7 +4,7 @@ ProductBox = React.createClass({
     render: function () {
         return (
             <div className="productBox">
-                hello react&es2015&webpack!
+                hello react&es2015&webpack! 0000 00
             </div>
         );
     }
