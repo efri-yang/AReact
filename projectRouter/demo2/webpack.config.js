@@ -2,26 +2,29 @@ var webpack = require('webpack');
 var path=require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+var CopyWebpackPlugin =require('copy-webpack-plugin');
 
 module.exports = {
 	devServer: { 
 		inline: true,
 		hot: true,
-		port:3000,
+		port:1202,
 		open:true,
-		contentBase:'./build/'
+		contentBase:'./build/',
+		outputPath: path.join(__dirname, 'build')
 	},
-	entry: './src/entry.js',
+	entry:"./src/entry.js",
 	output:{
 		path:path.resolve(__dirname,"build"),
-		filename:'[name].js'
+		filename:'bundle.js'
 	},
+	
 	module: {
         loaders: [
             {test: /\.css$/, loader:ExtractTextPlugin.extract("style", "css") },
             {test: /\.scss$/, loader: ExtractTextPlugin.extract('style', "css!sass")},
             {test: /\.html$/, loader: "html"},
+            {test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader?presets[]=es2015&presets[]=react' },
             {test: /\.(png|jpg)$/, loader: 'url-loader?limit=8192&name=./img/[hash].[ext]'}
         ]
     },
@@ -32,6 +35,9 @@ module.exports = {
     	new webpack.ProvidePlugin({	//加载jq
             $: 'jquery'
         }),
+        new CopyWebpackPlugin([
+        	{ from: __dirname+'/src/index.css'}
+        ]),
     	new ExtractTextPlugin("[name].css"),	//单独使用style标签加载css并设置其路径
   //   	new webpack.optimize.UglifyJsPlugin({	//压缩代码
 		//     compress: {

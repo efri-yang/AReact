@@ -1,7 +1,6 @@
 import React from 'react'
-
 export default React.createClass({
   render() {
-    return <div>About</div>
+    return <h3>Message {this.props.params.repoName}</h3>
   }
 })

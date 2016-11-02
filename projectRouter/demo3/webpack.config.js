@@ -2,15 +2,16 @@ var webpack = require('webpack');
 var path=require('path');
 var ExtractTextPlugin = require("extract-text-webpack-plugin");
 var HtmlWebpackPlugin = require('html-webpack-plugin');
-
+var CopyWebpackPlugin =require('copy-webpack-plugin');
 
 module.exports = {
 	devServer: { 
 		inline: true,
 		hot: true,
-		port:1201,
+		port:5555,
 		open:true,
-		contentBase:'./build/'
+		contentBase:'./build/',
+		outputPath: path.join(__dirname, 'build')
 	},
 	entry:"./src/entry.js",
 	output:{
@@ -34,6 +35,9 @@ module.exports = {
     	new webpack.ProvidePlugin({	//加载jq
             $: 'jquery'
         }),
+        new CopyWebpackPlugin([
+        	{ from: __dirname+'/src/index.css'}
+        ]),
     	new ExtractTextPlugin("[name].css"),	//单独使用style标签加载css并设置其路径
   //   	new webpack.optimize.UglifyJsPlugin({	//压缩代码
 		//     compress: {
